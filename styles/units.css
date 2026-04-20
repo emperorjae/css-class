@@ -1,0 +1,20 @@
+
+/* for em any front size used for the span(a child) will calcualte based on the size of the parent.  */
+
+
+p.text1 {
+
+    font-size:16px ;
+    
+}
+
+.text1 span {
+    color: red;
+    font-size: 1.5em;
+}
+
+/* Another relative unit rem By default html have a font-size of=16px but this can be overridden*/
+
+p.text2 {
+    font-size: 2rem;
+}

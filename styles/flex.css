@@ -1,0 +1,121 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    display: flex;
+}
+    
+.box2 div{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+
+
+}
+
+.box2 {
+    border: 2px solid black;
+    display: flex;
+    gap: 16px;
+    height: 200px;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+
+.box3 {
+    margin-top: 2rem;
+    border: 2px solid black;
+    height: 350px;
+    display: flex;
+    flex-direction:column ;
+    gap: 16px;
+    justify-content:center ;
+    align-items:center ;
+}
+
+.box3 div{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+
+}
+
+.box4{
+    border: 2px solid black;
+    margin:2rem auto 0;
+    width: 100%;
+    max-width: 25rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box4 div{
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+    color: white;
+    flex-shrink: 0;
+}
+
+.box5 {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.box5 button{
+    align-self: start;
+}
+
+.box6 {
+    margin: 2rem 0;
+    border: 1px solid black;
+    padding: 2rem 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.box6 div{
+    background-color: brown;
+    width: 100px;
+    color: white;
+
+}
+
+.box6 div:nth-child(1) {
+    flex-grow: 1;
+}
+
+div.box7 {
+    border: 1px solid black;
+    margin:2rem 0;
+    padding:2rem 1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.box7 div {
+    background-color: blue;
+    color: white;
+    width: 70px;
+    height: 50px;
+}
+
+.box7 div:nth-child(1) {
+    flex-basis: 200px;
+}
+    
+
+

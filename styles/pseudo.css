@@ -1,0 +1,138 @@
+
+h1 {
+    color: blue;
+    text-decoration: underline;
+}
+h1:hover{
+    color: brown;
+    text-decoration: none;
+}
+
+button {
+    outline: 0;
+    background-color: gold;
+    padding: o.5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+    scale: 1.2;
+
+}
+
+button:active{
+    transform: translatey(+18px);
+    background-color: brown;
+}
+
+input {
+    display: block;
+    margin: 1rem 0;
+    height: 1.5rem;
+    padding:0 5px ;
+    font-size: 14px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    
+}
+
+input:focus{
+    border-color:blue ;
+
+}
+
+input::placeholder {
+    color: brown;
+    text-align: center;
+
+}
+
+ul li:first-child{
+    color: blue;
+}
+
+ul li:last-child{
+    color: red;
+}
+
+/* to style other children in the list eg 3r */
+
+.box2 p:nth-child(3) {
+    color: gold;
+}
+
+.box3 {
+    border: 1px solid black;
+    padding: 32px 16px;
+    background-image: url(../images/close-up-person-working-alternative-energy.jpg);
+
+    background-position: center ;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+
+.box3 p{
+    font-size: 20px;
+}
+
+.box3 p::before{
+    content:"Beginning text";
+    color:gold ;
+}
+
+.box3 p::after{
+    content: "End of text";
+    color: red;
+
+}
+
+div.box3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    
+    
+}
+
+
+
+.sentence p::first-letter{
+    color: brown;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.sentence2 p::first-line{
+    color: blue;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+div.element{
+    width: 100%;
+    background-color: black;
+    color: green;
+}
+
+.element div{
+    width: 50%;
+}
+
+
+
+
+
+
+  
