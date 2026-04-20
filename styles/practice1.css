@@ -1,0 +1,25 @@
+/* element selecor */
+h1{
+    color: whitesmoke;
+    font-size: xx-large;
+    font-weight: 60;
+}
+/* class selector */
+.intro{
+    color: brown;
+    background-color: ;
+    font-style: inherit;
+}
+/* Id selector */
+
+#text{
+    color: aqua;
+    font-size: xx-large;
+}
+
+/* universal selector */
+
+*{
+    background-color: burlywood;
+}
+

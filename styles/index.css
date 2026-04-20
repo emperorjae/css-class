@@ -1,25 +1,204 @@
-/* element selecor */
-h1{
-    color: whitesmoke;
-    font-size: xx-large;
-    font-weight: 60;
-}
-/* class selector */
-.intro{
-    color: brown;
-    background-color: ;
-    font-style: inherit;
-}
-/* Id selector */
-
-#text{
-    color: aqua;
-    font-size: xx-large;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* universal selector */
-
-*{
-    background-color: burlywood;
+ul,li,a {
+    list-style: none;
+    text-decoration: none;
 }
+
+header {
+    width: 100%;
+    height: 4.5rem;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid rgba(0, 0, 0,0.1);
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    padding: 0.1rem;
+}
+
+header .desktoplinks,
+header nav > a {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;;
+    align-items: center;
+}
+
+.logo span:nth-child(1) {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.logo span:nth-child(2) {
+    font-weight: 600;
+    
+}
+
+.mobile ul.mobiledrop {
+    position: absolute;
+    right: 0;top: 100%;
+    background-color: #f6f6f6;
+    border-left: 1px solid rgba(0, 0, 0,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0,0.3);
+    border-top: 1px solid rgba(0,0,0,0.3);
+    width: 60%;
+    max-width: 12rem;
+    height: calc(100vh-4.5rem);
+    display: none;
+    flex-direction: column;
+    padding:1.1rem  ;
+    gap: 1rem;
+}
+
+ul.mobiledrop li:nth-child(4) a {
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding:0.4rem 0;
+    border-radius:5px ;
+}
+
+.mobile a {
+    color:black;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.hero {
+    width: 100%;
+    min-height:calc(100vh - 4.5rem);
+    background-image: url(../images/wonderful-young-lady-hat-wool-coat-jumping\ \(1\).jpg);
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0,0.2);
+}
+
+.hero h1 {
+    color: #f6f6f6;
+    z-index: 3;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero p {
+    color: #f6f6f6;
+    z-index: 3;
+    text-align: center;
+    font-size:1.5rem ;
+}
+
+@media (min-width:768px) {
+    .mobile {
+        display: none;
+    }
+
+header nav > a {
+    display: inline-block;
+}
+
+header .desktoplinks {
+    display: flex;
+    gap: 2rem;
+}
+
+ul.desktoplinks a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: black;
+}
+ul.desktoplinks a:hover {
+    color: blue;
+}
+
+ul.desktoplinks li:nth-child(3) {
+    position: relative;
+}
+
+.desktoplinks ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    width: fit-content;
+    padding: 2rem 1.5rem;
+}
+
+ul.desktoplinks li:nth-child(3):hover ul {
+    display: flex;
+}
+
+nav > a {
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    transition:filter,0.3s,ease-in-out ;
+}
+
+nav > a:hover {
+    filter: brightness(90%);
+}
+
+.hero {
+
+    background-position:;
+    background-size:;
+    height: ;
+    
+}
+
+.hero p {
+    text-overflow: ellipsis;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
